@@ -140,9 +140,25 @@ h1{
     opacity: 75%;
 }
 
+.tablet-phone{
+    display: none;
+}
+
+.desktop-phone{
+    display: none;
+}
+
 .glass{
     width: 217px;
     border-radius: 20px;
+}
+
+.tablet-glass{
+    display: none;
+}
+
+.desktop-glass{
+    display: none;
 }
 
 .main-middle{
@@ -172,6 +188,7 @@ section{
     display: flex;
     flex-direction: column;
     gap: 64px;
+    align-items: center;
 }
 
 .card{
@@ -237,6 +254,15 @@ footer span{
     
     .main-header{
         display: flex;
+        margin-bottom: 30px;
+    }
+
+    .main-description{
+        max-width: 339px;
+    }
+
+    h1{
+        margin-top: 60px;
     }
 
     .description-box button{
@@ -248,7 +274,87 @@ footer span{
         display: none;
     }
 
+    .keyboard-container{
+        width: 478px;
+        overflow: hidden;
+        margin-right: -40px;
+        margin-left: 69px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
     .tablet-keyboard{
         display: block;
+        width: 478px;
+        height: 425px;
     }
+
+    .photos{
+        gap:30px;
+        height: 320px;
+    }
+
+    .phone{
+        display: none;
+    }
+    
+    .phone-container{
+        width: 214px;
+        height: 320px;
+        border-radius: 20px;
+        margin: 0;
+    }
+
+    .tablet-phone{
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        mix-blend-mode: multiply;
+        opacity: 75%;
+    }
+
+    .glass{
+        display: none;
+    }
+
+    .tablet-glass{
+        display: block;
+        height: 100%;
+        border-radius: 20px;
+    }
+
+    .mechanical{
+        flex-direction: row;
+        text-align: left;
+        gap: 110px;
+    }
+
+    section{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 69px;
+    }
+
+    .card{
+        max-width: 281px;
+        align-items: flex-start;
+    }
+
+    h3{
+        text-align: left;
+    }
+
+    .card-p{
+        text-align: left;
+    }
+
+}
+
+@media screen and (min-width: 1024px ) {
+
+    section{
+        justify-content: space-around;
+    }
+    
 }
