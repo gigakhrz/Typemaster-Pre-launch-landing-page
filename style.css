@@ -116,6 +116,10 @@ h1{
     display: none;
 }
 
+.square{
+    display: none;
+}
+
 .photos{
     display: flex;
     gap: 14px;
@@ -128,6 +132,10 @@ h1{
     background-color: var(--orange);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+.square1{
+    display: none;
 }
 
 .phone{
@@ -353,8 +361,128 @@ footer span{
 
 @media screen and (min-width: 1024px ) {
 
+    header{
+        gap: 728px;
+    }
+
     section{
         justify-content: space-around;
     }
     
+}
+
+@media screen and (min-width: 1440px) {
+    
+    body{
+        padding:55px 165px 0 165px;
+    }
+
+    header{
+        gap: 895px;
+    }
+
+    .main-description{
+        max-width: 445px;
+    }
+
+    .description-box{
+        gap: 40px;
+    }
+
+    .tablet-keyboard{
+        display: none;
+    }
+
+    .desktop-keyboard{
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        margin-right: 30px;
+    }
+
+    .square-box{
+        min-width: 135px;
+        height: 236px;
+        background: hsla(199, 29%, 93%, 1);
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .square-box2{
+        min-width: 135px;
+        height: 236px;
+        background: hsla(199, 29%, 93%, 1);
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-left: -165px;
+    }
+    
+
+    .keyboard-container{
+        overflow: unset;
+        width: 540px;
+        height: 480px;
+        margin-left: 125px;
+        display: flex;
+    }
+
+    .main-middle{
+        flex-direction: row;
+        height: 480px;
+        gap: 125px;
+    }
+
+    .tablet-glass{
+        display: none;
+    }
+
+    .tablet-phone{
+        display: none;
+    }
+
+    .desktop-glass{
+        display: block;
+        width: 445px;
+        height: 480px;
+        border-radius: 20px;
+    }
+
+    .desktop-phone{
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        mix-blend-mode: multiply;
+        opacity: 75%;
+    }
+
+    .phone-container{
+        width: 255px;
+        height: 480px;
+    }
+
+    .mechanical{
+        flex-direction: column;
+        width: 255px;
+        gap: 27px;
+        margin: 120px 0 120px 0;
+    }
+
+    section{
+        gap: 30px;
+    }
+
+    .card{
+        max-width: 255px;
+    }
+    
+    footer{
+        margin-top: 125px;
+    }
+
+    footer p{
+        margin-bottom: 39px;
+    }
+
 }
